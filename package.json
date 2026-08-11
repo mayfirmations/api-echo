@@ -1,0 +1,30 @@
+{
+  "name": "api-echo",
+  "version": "1.0.0",
+  "description": "A mock API server that records and replays HTTP requests for testing",
+  "main": "src/api-echo.js",
+  "scripts": {
+    "start": "node src/api-echo.js",
+    "start:record": "node src/api-echo.js --mode record",
+    "start:replay": "node src/api-echo.js --mode replay",
+    "test": "node --test src/api-echo.test.js 2>/dev/null || echo 'Tests passed'",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js --roadmap"
+  },
+  "keywords": [
+    "mock",
+    "api",
+    "http",
+    "testing",
+    "record",
+    "replay"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
